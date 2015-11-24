@@ -4,15 +4,15 @@
     tools:context="com.common.xxplus.MainActivity">
 
     <item
-        android:id="@+id/id_news"
+        android:id="@+id/id_m_news"
         android:orderInCategory="100"
         android:title="1.News"
         app:showAsAction="never" />
 
     <item
-        android:id="@+id/action_settings2"
+        android:id="@+id/id_m_news_list_view"
         android:orderInCategory="100"
-        android:title="@string/action_settings"
+        android:title="2.ListView News"
         app:showAsAction="never" />
 
     <item

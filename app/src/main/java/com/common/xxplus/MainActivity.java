@@ -11,6 +11,7 @@ import android.view.Menu;
 import android.view.MenuItem;
 
 import com.common.xxplus.news.activity.NewsActivity;
+import com.common.xxplus.news.activity.NewsListViewActivity;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -46,11 +47,13 @@ public class MainActivity extends AppCompatActivity {
         int id = item.getItemId();
 
         //noinspection SimplifiableIfStatement
-        if (id == R.id.id_news) {
-
+        if (id == R.id.id_m_news) {
             Intent intent = new Intent(MainActivity.this, NewsActivity.class);
             startActivity(intent);
-
+            return true;
+        }else if(id == R.id.id_m_news_list_view){
+            Intent intent = new Intent(MainActivity.this, NewsListViewActivity.class);
+            startActivity(intent);
             return true;
         }
 
